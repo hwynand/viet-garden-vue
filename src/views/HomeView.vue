@@ -1,7 +1,6 @@
 <template>
-  <div class="homeView">
-    <!-- banner  -->
-    <!-- <div class="bg-dark">
+  <!-- banner  -->
+  <!-- <div class="bg-dark">
       <div class="container">
         <div class="content">
           <div class="banner-slider">
@@ -28,41 +27,39 @@
         </div>
       </div>
     </div> -->
-    <div class="content">
-      <div class="bg-dark">
-        <div class="main-block">
-          <div class="title">
-            <a title="Sản phẩm bán chạy" target="">
-              <span>Sản phẩm bán chạy</span>
-            </a>
-          </div>
-          <div class="product-block">
-            <ul>
-              <li v-for="(item, index) in list" :key="index">
-                <div class="product">
-                  <div class="pic-news">
-                    <router-link :to="'/productView/' + item.id">
-                      <img :src="item.img[0]" :alt="item.name"
-                    /></router-link>
-                  </div>
-                  <h3>
-                    <a href="/productView/">{{ item.name }}</a>
-                    <a>({{ item.id }})({{ item.class }})</a>
-                  </h3>
-                  <div class="price-product">{{ item.price }}</div>
-                  <div class="cart-product">
-                    <a href="/cartView">
-                      <i class="fa fa-shopping-cart"></i>
-                    </a>
-                    <router-link :to="'/productView/' + item.id"
-                      ><i class="fa fa-eye"></i
-                    ></router-link>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+
+  <div class="bg-dark">
+    <div class="main">
+      <div class="title">
+        <a title="Sản phẩm bán chạy">
+          <span>Sản phẩm bán chạy</span>
+        </a>
+      </div>
+      <div class="product-block">
+        <ul>
+          <li v-for="(item, index) in list" :key="index">
+            <div class="product">
+              <div class="pic-news">
+                <router-link :to="'/productView/' + item.id">
+                  <img :src="item.img[0]" :alt="item.name"
+                /></router-link>
+              </div>
+              <h3>
+                <a href="/productView/">{{ item.name }}</a>
+                <a>({{ item.id }})({{ item.class }})</a>
+              </h3>
+              <div class="price-product">{{ item.price }}</div>
+              <div class="cart-product">
+                <a href="/cartView">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <router-link :to="'/productView/' + item.id"
+                  ><i class="fa fa-eye"></i
+                ></router-link>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -84,14 +81,14 @@ export default {
       ],
     };
   },
-  mounted() {
+  created() {
     this.getData();
   },
   methods: {
     // Lấy giữu liệu từ API
     async getData() {
       try {
-        const response = await axios.get("http://localhost:3000/products");
+        const response = await axios.get("https://pxh09.cloud/viet-garden/api");
         this.list = response.data;
       } catch (error) {
         console.error(error);
@@ -101,15 +98,18 @@ export default {
 };
 </script>
 
-<!-- <style lang="scss" scoped>
-// .banner-slider {
-//   width: 100%;
-//   float: left;
-// }
-// ::v-deep .v-img__img {
-//   width: auto;
-// }
-// .content {
-//   display: flex;
-// }
-</style> -->
+<style lang="scss" scoped>
+.main {
+  margin: 20px;
+}
+.banner-slider {
+  width: 100%;
+  float: left;
+}
+::v-deep .v-img__img {
+  width: auto;
+}
+.content {
+  display: flex;
+}
+</style>

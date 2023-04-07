@@ -56,11 +56,15 @@ h6 {
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .fa {
+  font-style: inherit;
   font-family: "FontAwesome";
 }
-
+.fa-light {
+  font-style: inherit;
+  font-family: "FontAwesome";
+}

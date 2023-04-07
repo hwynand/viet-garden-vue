@@ -1,7 +1,7 @@
 <template>
   <!-- The sidebar  -->
   <div class="bg-dark">
-    <div class="col-left" style="padding-top: 20px">
+    <div class="col-left">
       <div class="block-col">
         <div class="menu-left">
           <div id="accordian">
@@ -89,7 +89,7 @@
               <div class="pic-news">
                 <a href="#">
                   <img
-                    src="../../../assets/img/items/cay-luoi-ho-de-ban-vuon-cay-viet.jpg"
+                    src="https://vuoncayviet.com/data/items/985/cay-luoi-ho-de-ban-vuon-cay-viet.jpg"
                     alt="Đầy đủ về cây Lưỡi hổ: Lợi ích, ý nghĩa phong thuỷ, mua và chăm sóc đúng cách"
                   />
                 </a>
@@ -108,7 +108,7 @@
               <div class="pic-news">
                 <a href="#">
                   <img
-                    src="../../../assets/img/items/vuon-cay-viet-cung-cap-si-cay-canh-mini-vuon-cay-viet.jpg"
+                    src="https://vuoncayviet.com/data/items/1120/vuon-cay-viet-cung-cap-si-cay-canh-mini-vuon-cay-viet.jpg"
                     alt="cay-canh-mini"
                   />
                 </a>
@@ -127,7 +127,7 @@
               <div class="pic-news">
                 <a href="#"
                   ><img
-                    src="../../../assets/img/items/cay-hop-menh-kim.jpg"
+                    src="https://vuoncayviet.com/data/items/1227/cay-hop-menh-kim.jpg"
                     alt="cay hop menh kim"
                   />
                 </a>
@@ -142,7 +142,7 @@
               <div class="pic-news">
                 <a href="#"
                   ><img
-                    src="../../../assets/img/items/menh-kim-hop-cay-gi.jpg"
+                    src="https://vuoncayviet.com/data/items/1256/menh-kim-hop-cay-gi.jpg"
                     alt="cay-hop-menh-kim"
                   />
                 </a>
@@ -160,7 +160,7 @@
               <div class="pic-news">
                 <a href="#"
                   ><img
-                    src="../../../assets/img/items/cach-cham-soc-cay-canh-mini-vuon-cay-viet.jpg"
+                    src="https://vuoncayviet.com/data/items/1255/cach-cham-soc-cay-canh-mini-vuon-cay-viet.jpg"
                     alt="cach-cham-soc-cay-canh-mini"
                   />
                 </a>
@@ -175,7 +175,7 @@
               <div class="pic-news">
                 <a href="#"
                   ><img
-                    src="../../../assets/img/items/mua-cay-canh-mini-o-dau-gia-re-vcv.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7D6vN_uBryd7Rzu4unucxRNtT-4hK9hH0g&usqp=CAU"
                     alt="mua cay canh mini o dau"
                   />
                 </a>
@@ -192,7 +192,7 @@
               <div class="pic-news">
                 <a href="#">
                   <img
-                    src="../../../assets/img/items/top-11-cay-canh-van-phong-dep-va-de-cham-nhat.jpg"
+                    src="https://vuoncayviet.com/data/items/1237/top-11-cay-canh-van-phong-dep-va-de-cham-nhat.jpg"
                     alt="cây cảnh văn phòng"
                   />
                 </a>
@@ -210,7 +210,7 @@
               <div class="pic-news">
                 <a href="#">
                   <img
-                    src="../../../assets/img/items/cay-hong-mon-de-ban-vcv.jpg"
+                    src="https://vuoncayviet.com/data/items/916/cay-hong-mon-de-ban-vcv.jpg"
                     alt="Mệnh hợp và ý nghĩa phong thuỷ cây Hồng môn"
                   />
                 </a>
@@ -225,7 +225,7 @@
               <div class="pic-news">
                 <a href="#">
                   <img
-                    src="../../../assets/img/items/cay-van-nien-thanh.jpeg"
+                    src="https://vuoncayviet.com/data/items/1248/cay-van-nien-thanh.jpeg"
                     alt="cay van nien thanh"
                   />
                 </a>
@@ -252,9 +252,12 @@
 }
 .bg-dark {
   background: #eee;
-  width: 25%;
+  width: 31%;
   float: left;
-  /* margin-left: 30px; */
+  margin-left: 18px;
+}
+.col-left {
+  padding-top: 20px;
 }
 .menu-left {
   background: #fff;
@@ -347,11 +350,6 @@
   width: 100%;
   float: left;
 }
-.col-left {
-  width: 25%;
-  float: left;
-}
-
 .block-col {
   width: 100%;
   float: left;
